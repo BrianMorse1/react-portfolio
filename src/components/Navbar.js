@@ -1,30 +1,31 @@
 import React from "react";
-import { Container, Flex, Link, Icon } from '@chakra-ui/react';
-import {  BrowserRouter as Router, 
-    NavLinkLink as RouterLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
-function Navbar() {
+const Navbar = () => {
     return (
-        <Container maxW='full'>
-            <Link as={RouterLink} to='/home' p={2}>
-            Home
-            </Link>
-            <Link as={RouterLink} to='/about' p={2}>
-            About
-            </Link>
-            <Link as={RouterLink} to='/projects' p={2}>
-            Projects
-            </Link>
-            <Link as={RouterLink} to='/contact' p={2}>
-            Contact
-            </Link>
-            <Link as={RouterLink} to='/resume' p={2}>
-            Resume
-            </Link>
-        </Container>
-)}
+        <nav>
+            <ul>
+                <li>
+                    <NavLink to='/'>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/about'>About</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/projects'>Portfolio</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/contact'>Contact</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/resume'>Resume</NavLink>
+                </li>
+            </ul>
+        </nav>
+    )
+}
 
 
 export default Navbar;
