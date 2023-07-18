@@ -70,9 +70,10 @@ header {
   border-radius: 10px;
   background-color: #282828;
   border-color: white;
-  height: 30vh;
+  height: 20vh;
   margin: 1vw;
   overflow: hidden;
+  align-items: center;
   
 }
 
@@ -84,7 +85,7 @@ header {
   margin-left: 10vh;
   margin-right: 10vh;
   margin-top: 20vh;
-  margin-bottom: 10vh
+  margin-bottom: 10vh;
 }
 
 .about-container {
@@ -92,4 +93,11 @@ header {
   margin-right: 10vh;
   margin-top: 20vh;
   margin-bottom: 10vh
+}
+
+.card-img {
+  height: 10vh;
+  width: 10vw;
+  margin-left: 9vw;
+  margin-right: 10vw;
 }
