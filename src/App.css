@@ -31,6 +31,7 @@ nav {
   left: 0;
   background-color: #282828;
   border-radius: 0 20px 20px 0;
+  z-index: 0;
 }
 
 nav ul {
@@ -70,22 +71,31 @@ header {
   border-radius: 10px;
   background-color: #282828;
   border-color: white;
-  height: 20vh;
-  margin: 1vw;
-  overflow: hidden;
-  align-items: center;
+  height: 30vh;
+ 
+  
   
 }
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-#project-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(20vw, 30vw));
-  gap: 30px;
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 80vw;
+  gap: 20px;
   padding: 20px;
   margin-left: 10vh;
   margin-right: 10vh;
-  margin-top: 20vh;
+  margin-top: 30vh;
   margin-bottom: 10vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-container {
@@ -96,8 +106,55 @@ header {
 }
 
 .card-img {
-  height: 10vh;
-  width: 10vw;
-  margin-left: 9vw;
+  height: 5vh;
+  width: 5vw;
   margin-right: 10vw;
+}
+
+.card-text {
+  font-size: 18px;
+  float: left;
+  
+}
+
+.form {
+  width: 400px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+
+.form label {
+  color: white;
+  font-size: 18px;
+}
+
+.form input,
+.form textarea {
+  padding: 8px;
+  font-size: 16px; 
+  border: 1px solid #927ef4; 
+  border-radius: 5px;
+  background-color: #282828; 
+  color: white;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #927ef4; 
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #7b5be0
 }
