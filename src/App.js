@@ -27,6 +27,7 @@ function App() {
           <Route path='/contact' element={<Contact />}/>
           <Route path='/resume' element={<Resume />}/>
         </Routes>
+        <footer>Github: https://github.com/BrianMorse1, Linked-in: https://www.linkedin.com/in/brian-morse-a49b9747</footer>
       </div>
     </Router>
   );

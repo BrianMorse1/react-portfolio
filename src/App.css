@@ -158,3 +158,15 @@ header {
 .form button:hover {
   background-color: #7b5be0
 }
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+}
+
+#resume{
+  max-height: 60vh;
+  overflow: scroll;
+}
