@@ -18,7 +18,9 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <header>Brian Morse</header>
+        <header>Brian Morse
+          <image src='assets/Brian-pic.jpeg'></image>
+        </header>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />}/>
