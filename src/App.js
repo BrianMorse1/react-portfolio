@@ -11,6 +11,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Home from './components/Home';
+import brianImage from './assets/Brian-pic.jpeg'
 
 
 
@@ -19,7 +20,7 @@ function App() {
     <Router>
       <div className='App'>
         <header>Brian Morse
-          <image src='assets/Brian-pic.jpeg'></image>
+          <img src={brianImage}></img>
         </header>
         <Navbar />
         <Routes>

@@ -10,16 +10,14 @@ const ContactForm = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-//commented out because the logic isn't working
-  // const handleBlur = (e) => {
-  //   const { name, value } = e.target;
-  //   if (!value) {
-  //     toast.error('Please complete all fields', {
-  //       position: toast.POSITION.TOP_CENTER,
-  //       autoClose: 2000
-  //     });
-  //   }
-  // };
+// commented out because the logic isn't working
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    if (!value) {
+      alert(name);
+      document.activeElement.blur();
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,8 +35,10 @@ const ContactForm = () => {
           <input
             type="text"
             id="name"
+            name='name'
             className="input-field"
             onChange={handleChange}
+            onBlur={handleBlur}
             required
           />
         </div>
@@ -49,8 +49,10 @@ const ContactForm = () => {
           <input
             type="email"
             id="email"
+            name="email"
             className="input-field"
             onChange={handleChange}
+            onBlur={handleBlur}
             required
           />
         </div>
@@ -60,8 +62,10 @@ const ContactForm = () => {
           </label>
           <textarea
             id="message"
+            name="message"
             className="input-field"
             onChange={handleChange}
+            onBlur={handleBlur}
             required
           />
         </div>
